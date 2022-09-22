@@ -8,6 +8,8 @@
 </head>
 <body style="font-family: 'source sans pro';font-size:150%;">
   
+ <p>Score: <a id="score">0</a></p>
+ 
   <input style="font-family: 'Cedarville Cursive', cursive;" type='text' placeholder="First Name"></input><input style="font-family: 'Cedarville Cursive', cursive;" type='text' placeholder="Last Name"></input>
 <span id="time"></span>
 <p></p>
@@ -43,6 +45,10 @@
 <script>
 const d = new Date();
 document.getElementById("time").innerHTML = d;
+ 
+ var score = 0;
+ function add1() {
+document.getElementById("score").innerHTML = score -= 1;
 </script>
 
 </html>
