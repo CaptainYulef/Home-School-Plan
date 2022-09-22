@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <title>Home School Plan</title>
  <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -6,7 +8,8 @@
 </head>
 <body style="font-family: 'source sans pro';font-size:150%;">
   
-  <input style="font-family: 'Cedarville Cursive', cursive;" type='text' placeholder="First Name"></input><input style="font-family: 'Cedarville Cursive', cursive;" type='text' placeholder="Last Name"></input><time datetime="YYYY-MM-DDThh:mm:ssTZD">
+  <input style="font-family: 'Cedarville Cursive', cursive;" type='text' placeholder="First Name"></input><input style="font-family: 'Cedarville Cursive', cursive;" type='text' placeholder="Last Name"></input>
+<span id="time"></span>
 <p></p>
   
   <div>
@@ -36,3 +39,12 @@
 <p id='read' onclick="document.getElementById('read').style.display='none';">Reading</p>
   </div>
 </body>
+
+<script>
+  `use strict`
+var datetime = new Date();
+console.log(datetime);
+document.getElementById("time").textContent = datetime; //it will print on html page
+</script>
+
+</html>
