@@ -7,8 +7,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,700&family=Lexend:wght@600&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body style="font-family: 'source sans pro';font-size:150%;">
-  
- <p>Score: <a id="score">0</a></p>
  
   <input style="font-family: 'Cedarville Cursive', cursive;" type='text' placeholder="First Name"></input><input style="font-family: 'Cedarville Cursive', cursive;" type='text' placeholder="Last Name"></input>
 <span id="time"></span>
@@ -21,32 +19,28 @@
   </div>
   
   <div id="school">
-    <p id='cursive' onclick="add1();document.getElementById('cursive').style.display='none';">Cursive</p>
-<p id='mata' onclick="add1();document.getElementById('mata').style.display='none';">Math Tables</p>
-<p id='mavi' onclick="add1();document.getElementById('mavi').style.display='none';">Math Video</p>
-    <p id='books' onclick="add1();document.getElementById('books').style.display='none';">School Books</p>
-<p id='ronu' onclick="add1();document.getElementById('ronu').style.display='none';">Roman Numerals</p>
-<p id='scivi' onclick="add1();document.getElementById('scivi').style.display='none';">Science Video</p>
-<p id='sci' onclick="add1();document.getElementById('sci').style.display='none';">Science Fact</p>
-<p id='geo' onclick="add1();document.getElementById('geo').style.display='none';">Geography</p>
-<p id='his' onclick="add1();document.getElementById('his').style.display='none';">History</p>
-<p id='cou' onclick="add1();document.getElementById('cou').style.display='none';">Country Facts</p>
-<p id='maneti' onclick="add1();document.getElementById('maneti').style.display='none';">Manners/Etiquette</p>
-<p id='lang' onclick="add1();document.getElementById('lang').style.display='none';">Language</p>
-    <p id='music' onclick="add1();document.getElementById('music').style.display='none';">Music/Music Theory (optional)</p>
-<p id='define' onclick="add1();document.getElementById('define').style.display='none';">Definitions</p>
-<p id='sent' onclick="add1();document.getElementById('sent').style.display='none';">Sentences</p>
-    <p id='report' onclick="add1();document.getElementById('report').style.display='none';">Report (optional)</p>
-<p id='doc' onclick="add1();document.getElementById('doc').style.display='none';">Documentary</p>
-<p id='read' onclick="add1();document.getElementById('read').style.display='none';">Reading</p>
+    <p id='cursive' onclick="document.getElementById('cursive').style.display='none';">Cursive</p>
+<p id='mata' onclick="document.getElementById('mata').style.display='none';">Math Tables</p>
+<p id='mavi' onclick="document.getElementById('mavi').style.display='none';">Math Video</p>
+    <p id='books' onclick="document.getElementById('books').style.display='none';">School Books</p>
+<p id='ronu' onclick="document.getElementById('ronu').style.display='none';">Roman Numerals</p>
+<p id='scivi' onclick="document.getElementById('scivi').style.display='none';">Science Video</p>
+<p id='sci' onclick="document.getElementById('sci').style.display='none';">Science Fact</p>
+<p id='geo' onclick="document.getElementById('geo').style.display='none';">Geography</p>
+<p id='his' onclick="document.getElementById('his').style.display='none';">History</p>
+<p id='cou' onclick="document.getElementById('cou').style.display='none';">Country Facts</p>
+<p id='maneti' onclick="document.getElementById('maneti').style.display='none';">Manners/Etiquette</p>
+<p id='lang' onclick="document.getElementById('lang').style.display='none';">Language</p>
+    <p id='music' onclick="document.getElementById('music').style.display='none';">Music/Music Theory (optional)</p>
+<p id='define' onclick="document.getElementById('define').style.display='none';">Definitions</p>
+<p id='sent' onclick="document.getElementById('sent').style.display='none';">Sentences</p>
+    <p id='report' onclick="document.getElementById('report').style.display='none';">Report (optional)</p>
+<p id='doc' onclick="document.getElementById('doc').style.display='none';">Documentary</p>
+<p id='read' onclick="document.getElementById('read').style.display='none';">Reading</p>
   </div>
 </body>
 
 <script>
-var score = 0;
- function add1() {
-document.getElementById("score").innerHTML = score -= 1;
-  
   const d = new Date();
 document.getElementById("time").innerHTML = d;
 </script>
